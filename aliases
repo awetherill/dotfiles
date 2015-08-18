@@ -5,12 +5,19 @@ alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
+p() {
+  # Move to the projects directory and an optional subdirectory
+  cd ~/Documents/Projects/$1
+}
+
 # Bundler
 alias b="bundle"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias s="rspec"
+alias rake="bundle exec rake"
+alias guard="bundle exec guard"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
