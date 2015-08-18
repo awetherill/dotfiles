@@ -24,3 +24,6 @@
   autosquash = true
 [include]
   path = ~/.gitconfig.local
+[user]
+	name = Andy Wetherill
+	email = awetheri@nd.edu
